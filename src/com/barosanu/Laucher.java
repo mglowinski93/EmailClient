@@ -15,9 +15,9 @@ public class Laucher extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("view/LoginWindow.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("view/MainWindow.fxml"));
 
-        Scene scene = new Scene(parent, 590, 260);
+        Scene scene = new Scene(parent, 1060, 701);
         stage.setScene(scene);
 
         stage.show();
