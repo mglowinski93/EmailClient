@@ -4,6 +4,7 @@ import com.barosanu.EmailManager;
 import com.barosanu.controller.BaseController;
 import com.barosanu.controller.LoginWindowController;
 import com.barosanu.controller.MainWindowController;
+import com.barosanu.controller.OptionsWindowController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,6 +27,12 @@ public class ViewFactory {
 
     public void showMainWindow(){
         BaseController controller = new MainWindowController(emailManager, this, "MainWindow.fxml");
+        initializeState(controller);
+    }
+
+    public void showOptionsWindow(){
+        System.out.println("options window called");
+        BaseController controller = new OptionsWindowController(emailManager, this, "OptionsWindow.fxml");
         initializeState(controller);
     }
 
