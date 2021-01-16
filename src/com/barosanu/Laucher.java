@@ -15,5 +15,6 @@ public class Laucher extends Application {
 
         ViewFactory viewFactory = new ViewFactory(new EmailManager());
         viewFactory.showLoginWindow();
+        viewFactory.updateStyles();
     }
 }
