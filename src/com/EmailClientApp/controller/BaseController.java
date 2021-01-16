@@ -1,7 +1,7 @@
-package com.barosanu.controller;
+package com.EmailClientApp.controller;
 
-import com.barosanu.EmailManager;
-import com.barosanu.view.ViewFactory;
+import com.EmailClientApp.EmailManager;
+import com.EmailClientApp.view.ViewFactory;
 
 public class BaseController {
 

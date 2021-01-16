@@ -1,4 +1,4 @@
-package com.barosanu.controller;
+package com.EmailClientApp.controller;
 
 public enum EmailSendingResult {
     SUCCESS,

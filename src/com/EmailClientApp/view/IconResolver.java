@@ -1,4 +1,4 @@
-package com.barosanu.view;
+package com.EmailClientApp.view;
 
 import javafx.scene.Node;
 import javafx.scene.image.Image;

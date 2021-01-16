@@ -1,4 +1,4 @@
-package com.barosanu.model;
+package com.EmailClientApp.model;
 
 public class SizeInteger implements Comparable<SizeInteger>{
 

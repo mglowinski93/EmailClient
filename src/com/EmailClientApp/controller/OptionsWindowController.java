@@ -1,9 +1,9 @@
-package com.barosanu.controller;
+package com.EmailClientApp.controller;
 
-import com.barosanu.EmailManager;
-import com.barosanu.view.ColorTheme;
-import com.barosanu.view.FontSize;
-import com.barosanu.view.ViewFactory;
+import com.EmailClientApp.EmailManager;
+import com.EmailClientApp.view.ColorTheme;
+import com.EmailClientApp.view.FontSize;
+import com.EmailClientApp.view.ViewFactory;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

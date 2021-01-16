@@ -1,4 +1,4 @@
-package com.barosanu.model;
+package com.EmailClientApp.model;
 
 import javax.mail.Session;
 import javax.mail.Store;

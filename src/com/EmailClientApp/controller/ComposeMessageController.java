@@ -1,9 +1,9 @@
-package com.barosanu.controller;
+package com.EmailClientApp.controller;
 
-import com.barosanu.EmailManager;
-import com.barosanu.controller.services.EmailSenderService;
-import com.barosanu.model.EmailAccount;
-import com.barosanu.view.ViewFactory;
+import com.EmailClientApp.EmailManager;
+import com.EmailClientApp.controller.services.EmailSenderService;
+import com.EmailClientApp.model.EmailAccount;
+import com.EmailClientApp.view.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;

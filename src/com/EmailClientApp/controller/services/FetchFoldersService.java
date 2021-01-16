@@ -1,7 +1,7 @@
-package com.barosanu.controller.services;
+package com.EmailClientApp.controller.services;
 
-import com.barosanu.model.EmailTreeItem;
-import com.barosanu.view.IconResolver;
+import com.EmailClientApp.model.EmailTreeItem;
+import com.EmailClientApp.view.IconResolver;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 

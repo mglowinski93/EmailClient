@@ -1,4 +1,4 @@
-package com.barosanu.controller.services;
+package com.EmailClientApp.controller.services;
 
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;

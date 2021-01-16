@@ -6,8 +6,8 @@ module EmailClient {
     requires activation;
     requires java.mail;
 
-    opens com.barosanu;
-    opens com.barosanu.view;
-    opens com.barosanu.controller;
-    opens com.barosanu.model;
+    opens com.EmailClientApp;
+    opens com.EmailClientApp.view;
+    opens com.EmailClientApp.controller;
+    opens com.EmailClientApp.model;
 }

@@ -1,4 +1,4 @@
-package com.barosanu.model;
+package com.EmailClientApp.model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

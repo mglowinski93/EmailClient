@@ -1,4 +1,4 @@
-package com.barosanu.view;
+package com.EmailClientApp.view;
 
 public enum FontSize {
     SMALL,

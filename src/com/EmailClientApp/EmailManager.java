@@ -1,14 +1,13 @@
-package com.barosanu;
+package com.EmailClientApp;
 
-import com.barosanu.controller.services.FetchFoldersService;
-import com.barosanu.controller.services.FolderUpdaterService;
-import com.barosanu.model.EmailAccount;
-import com.barosanu.model.EmailMessage;
-import com.barosanu.model.EmailTreeItem;
-import com.barosanu.view.IconResolver;
+import com.EmailClientApp.controller.services.FetchFoldersService;
+import com.EmailClientApp.controller.services.FolderUpdaterService;
+import com.EmailClientApp.model.EmailAccount;
+import com.EmailClientApp.model.EmailMessage;
+import com.EmailClientApp.model.EmailTreeItem;
+import com.EmailClientApp.view.IconResolver;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.TreeItem;
 
 import javax.mail.Flags;
 import javax.mail.Folder;

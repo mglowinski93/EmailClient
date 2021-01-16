@@ -1,6 +1,6 @@
-package com.barosanu;
+package com.EmailClientApp;
 
-import com.barosanu.view.ViewFactory;
+import com.EmailClientApp.view.ViewFactory;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

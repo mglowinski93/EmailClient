@@ -1,6 +1,6 @@
-package com.barosanu.controller.services;
+package com.EmailClientApp.controller.services;
 
-import com.barosanu.model.EmailMessage;
+import com.EmailClientApp.model.EmailMessage;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.scene.web.WebEngine;

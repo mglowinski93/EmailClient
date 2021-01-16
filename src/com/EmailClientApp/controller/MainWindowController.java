@@ -1,11 +1,11 @@
-package com.barosanu.controller;
+package com.EmailClientApp.controller;
 
-import com.barosanu.EmailManager;
-import com.barosanu.controller.services.MessageRendererService;
-import com.barosanu.model.EmailMessage;
-import com.barosanu.model.EmailTreeItem;
-import com.barosanu.model.SizeInteger;
-import com.barosanu.view.ViewFactory;
+import com.EmailClientApp.EmailManager;
+import com.EmailClientApp.controller.services.MessageRendererService;
+import com.EmailClientApp.model.EmailMessage;
+import com.EmailClientApp.model.EmailTreeItem;
+import com.EmailClientApp.model.SizeInteger;
+import com.EmailClientApp.view.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;

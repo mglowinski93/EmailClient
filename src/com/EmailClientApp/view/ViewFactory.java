@@ -1,7 +1,7 @@
-package com.barosanu.view;
+package com.EmailClientApp.view;
 
-import com.barosanu.EmailManager;
-import com.barosanu.controller.*;
+import com.EmailClientApp.EmailManager;
+import com.EmailClientApp.controller.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
