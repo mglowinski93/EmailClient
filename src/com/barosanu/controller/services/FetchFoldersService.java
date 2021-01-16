@@ -1,6 +1,7 @@
 package com.barosanu.controller.services;
 
 import com.barosanu.model.EmailTreeItem;
+import com.barosanu.view.IconResolver;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 
@@ -10,7 +11,6 @@ import javax.mail.MessagingException;
 import javax.mail.Store;
 import javax.mail.event.MessageCountEvent;
 import javax.mail.event.MessageCountListener;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FetchFoldersService extends Service<Void> {
@@ -18,7 +18,7 @@ public class FetchFoldersService extends Service<Void> {
     private Store store;
     private EmailTreeItem<String> foldersRoot;
     private List<Folder> folderList;
-
+    private IconResolver iconResolver = new IconResolver();
 
     public FetchFoldersService(Store store, EmailTreeItem<String> foldersRoot, List<Folder> folderList) {
         this.store = store;
@@ -46,6 +46,7 @@ public class FetchFoldersService extends Service<Void> {
         for(Folder folder: folders){
             folderList.add(folder);
             EmailTreeItem<String> emailTreeItem = new EmailTreeItem<String>(folder.getName());
+            emailTreeItem.setGraphic(iconResolver.getIconForFolder(folder.getName()));
             foldersRoot.getChildren().add((emailTreeItem));
             foldersRoot.setExpanded(true);
             fetchMessagesOnFolder(folder, emailTreeItem);
@@ -62,7 +63,7 @@ public class FetchFoldersService extends Service<Void> {
         folder.addMessageCountListener(new MessageCountListener() {
             @Override
             public void messagesAdded(MessageCountEvent e) {
-                for(int i = 0; i<e.getMessages().length; i++){
+                for (int i = 0; i < e.getMessages().length; i++){
                     try {
                         Message message = folder.getMessage(folder.getMessageCount() - i);
                         emailTreeItem.addEmailToTop(message);
@@ -74,7 +75,7 @@ public class FetchFoldersService extends Service<Void> {
 
             @Override
             public void messagesRemoved(MessageCountEvent e) {
-
+                System.out.println("message removed event!!!: " + e);
             }
         });
     }
